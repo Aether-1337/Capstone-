@@ -38,20 +38,6 @@ All rows with NaN fertility rates were dropped
 
 The info was then checked 
 
-<class 'pandas.core.frame.DataFrame'>
-Index: 16928 entries, 0 to 17023
-Data columns (total 5 columns):
- #   Column          Non-Null Count  Dtype  
----  ------          --------------  -----  
- 0   Country Name    16928 non-null  object 
- 1   Country Code    16928 non-null  object 
- 2   Indicator Name  16928 non-null  object 
- 3   Year            16928 non-null  int32  
- 4   FertilityRate   16928 non-null  float64
-dtypes: float64(1), int32(1), object(3)
-memory usage: 727.4+ KB
-None
-
 The first 20 lines were then printed to get a better understanding of the raw data
 
 Then checked the unique values per column  
