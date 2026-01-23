@@ -18,10 +18,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    fertility_raw = pd.read_csv(
-        r"D:\API_SP.DYN.TFRT.IN_DS2_en_csv_v2_230\API_SP.DYN.TFRT.IN_DS2_en_csv_v2_230.csv",
-        skiprows=4
-    )
+    fertility_raw = pd.read_csv("Data/API_SP.DYN.TFRT.IN_DS2_en_csv_v2_230.csv", skiprows=4)
 
     year_cols = [c for c in fertility_raw.columns if c.isdigit()]
     df = fertility_raw[["Country Name"] + year_cols].copy()
