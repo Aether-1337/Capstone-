@@ -65,6 +65,15 @@ The primary development focus was on creating a clear and accessible user interf
 Live Application:
 https://globalbirthrate.streamlit.app/
 
+### Business Requirements
+The application is designed to meet the following business requirements:
+- Analyse long‑term fertility trends to support demographic planning and policy development.
+- Enable cross‑country and regional comparisons to identify demographic disparities and benchmark performance.
+- Provide geographic visualisation of fertility patterns to support high‑level strategic decision‑making.
+- Offer baseline forecasting capabilities to assist with scenario planning and resource allocation.
+- Deliver an accessible, interactive analytical tool suitable for non‑technical stakeholders.
+- Support evidence‑based evaluation of demographic and socioeconomic factors influencing fertility rates.
+
 ### Future Work
 Planned enhancements include:
 - Allowing users to toggle between slope and percentage‑based trend metrics
