@@ -85,11 +85,11 @@ Planned enhancements include:
 ### Jupyter Notebook
 The notebook contains exploratory work, including intermediate steps and duplicated code segments. These were intentionally retained to document the full analytical workflow.
 
-###GDPR
+### GDPR
 
 As all data was publicly available and anomnays no privacy concerns. 
 
-###Aknowledgements 
+### Aknowledgements 
 
 First of all I would like to thank my tutor at the Code Insitute for having patients and supplying us with everything we needed to complete the project. 
 
