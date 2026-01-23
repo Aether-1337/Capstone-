@@ -76,7 +76,7 @@ The application is designed to meet the following business requirements:
 
 ### Future Work
 Planned enhancements include:
-- Allowing users to toggle between slope and percentage‑based trend metrics
+- Allowing users to toggle between slope and percentage trend metrics
 - Implementing non‑linear regression models for more realistic projections
 - Incorporating additional variables (e.g., climate, conflict, migration) to contextualise fertility trends
 - Improving labelling and clarity in distribution plots
