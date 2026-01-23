@@ -18,11 +18,20 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    fertility_raw = pd.read_csv("Data/API_SP.DYN.TFRT.IN_DS2_en_csv_v2_230.csv", skiprows=4)
+    import os
 
+    # Build a reliable absolute path to the CSV
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir, "Data", "API_SP.DYN.TFRT.IN_DS2_en_csv_v2_230.csv")
+
+    # Load raw dataset
+    fertility_raw = pd.read_csv(csv_path, skiprows=4)
+
+    # Extract year columns
     year_cols = [c for c in fertility_raw.columns if c.isdigit()]
     df = fertility_raw[["Country Name"] + year_cols].copy()
 
+    # Long format
     df_long = df.melt(
         id_vars="Country Name",
         var_name="Year",
@@ -31,19 +40,19 @@ def load_data():
     df_long["Year"] = df_long["Year"].astype(int)
     df_long = df_long.dropna(subset=["Fertility Rate"])
 
+    # Compute pct change
     trend_list = []
     for country, group in df_long.groupby("Country Name"):
         y = group["Fertility Rate"].sort_index()
-
         if len(y) > 1:
             pct_change = (y.iloc[-1] - y.iloc[0]) / y.iloc[0] * 100
         else:
             pct_change = np.nan
-
         trend_list.append({"Country Name": country, "Pct Change": pct_change})
 
     trend_df = pd.DataFrame(trend_list)
 
+    # World Bank metadata
     url = "https://api.worldbank.org/v2/country?format=json&per_page=400"
     raw = requests.get(url).json()
     countries = pd.DataFrame(raw[1])
