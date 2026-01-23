@@ -8,18 +8,18 @@ In this project I decided to look into global population trends. I wanted to see
 
 ### Data Sources 
 
-This project uses two data sets
+This project uses two data sets-
 
-https://data.worldbank.org/indicator/SP.DYN.TFRT.IN - Data from this page includes global fertility rates (births per woman) from 1960 to 2023
+https://data.worldbank.org/indicator/SP.DYN.TFRT.IN - Data from this page includes global fertility rates (births per woman) from 1960 to 2023.
 
 https://api.worldbank.org/v2/country?format=json&per_page=400 - This includes social econimc, and regional map data. 
 
 ### Overview 
 
 - The project includes an interactive streamlit app that is able to compare contries birth rates across time.
-- Explore long term trends
-- Visulise global patterns on an interacitve map
-- Interact with charts and filters
+- Explore long term trends.
+- Visulise global patterns on an interacitve map.
+- Interact with charts and filters.
 
 It's desighned for anyone interested in demodraphic changes. 
 
@@ -34,17 +34,17 @@ The raw .csv from data.worldbank.org/indicator/SP.DYN.TFRT.IN was initally hard 
 
 A simple - skiprows=4) fixed the errors. 
 
-All rows with NaN fertility rates were dropped 
+All rows with NaN fertility rates were dropped. 
 
-The info was then checked 
+The info was then checked. 
 
-The first 20 lines were then printed to get a better understanding of the raw data
+The first 20 lines were then printed to get a better understanding of the raw data.
 
-Then checked the unique values per column  
+Then checked the unique values per column.  
 
-Checked number of NaN values per column
+Checked number of NaN values per column.
 
-Then a list of data types that are numeric
+Then a list of data types that are numeric.
 
 This was my way to get a better understanding of the data and how to use it. 
 
@@ -52,5 +52,17 @@ This was my way to get a better understanding of the data and how to use it.
 
 Co-pilot was used throughout this process for optimisation of graphs. 
 
+This line graph is able to compare any of the countries birthrates over time, this helped to asses trends and make comparisions.
+
 <img width="1010" height="547" alt="Lines" src="https://github.com/user-attachments/assets/059a229d-aaa3-4746-b4b3-6aecf3c1a8d9" />
+
+Making a distribution plot was extreamly interesting, you are able to visulise the data in a way that shows there are 2 spikes in the distibution one being much larger than the other. 
+
+The labels and values on the graph need to be changed to reflect the data better (you can still see interesting trends) - Requiers opermisation 
+
+<img width="1789" height="8628" alt="Distribution" src="https://github.com/user-attachments/assets/8bb5409d-ea5f-48b2-9546-7e5c217ad269" />
+
+
+
+
 
