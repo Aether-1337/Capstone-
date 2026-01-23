@@ -176,7 +176,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 
 with tab1:
     st.title("🌍 Global Fertility Rate Trends")
-    st.write("Slope represents the yearly change in fertility rate for each country.")
+    
 
     fig = px.choropleth(
         filtered,
@@ -256,7 +256,7 @@ with tab4:
     bottom10 = df.nlargest(10, "Pct Change")
     st.dataframe(bottom10)
 
-## Helper: Forecasting function
+## Forecasting function
 
 def forecast_linear(df_long, country, years_ahead=20):
     subset = df_long[df_long["Country Name"] == country].sort_values("Year")
