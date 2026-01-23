@@ -87,13 +87,13 @@ The notebook contains exploratory work, including intermediate steps and duplica
 
 ### GDPR
 
-As all data was publicly available and anomnays no privacy concerns. 
+As all data was publicly available and anomnays, no privacy concerns. 
 
 ### Aknowledgements 
 
-First of all I would like to thank my tutor at the Code Insitute for having patients and supplying us with everything we needed to complete the project. 
+First of all I would like to thank my tutor at the Code Institute for supplying us with everything we needed to complete the project. 
 
-I would also like to thank the World Bank for providing the data that formed the foundation of this work.
+I would also like to thank the World Bank, for providing the data that formed the foundation of this work.
 
 Finally, I want to acknowledge Copilot, which was used during the development of this project.
 
